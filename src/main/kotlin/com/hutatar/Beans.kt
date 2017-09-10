@@ -8,7 +8,7 @@ import org.springframework.context.support.beans
 fun beans() : BeanDefinitionDsl = beans {
     bean<UserHandler>()
     bean {
-        Routes(ref()).router()
+        UserRoutes(ref()).router()
     }
 }
 
